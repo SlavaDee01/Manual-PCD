@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual-pc</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+</head>
+<body>
+  <header class="header">
+     <a class="logo" href="#">
+      <img class="logo__image" src="images/logo-b.svg" alt="image">
+     </a>
+    <form class="header__form">
+      <input class="header__form-input" type="text" style="outline: none;" required>
+      <button class="header__form-submit" type="submit">
+        <svg class="header__form-icon"><use xlink:href="images/sprite.svg#search_icon"></use></svg>
+      </button>
+    </form>
+      <button class="header__btn" data-modal="#modal-add">
+        <span class="header__btn-text">Предложить статью</span> 
+        <svg class="header__btn-icon"><use xlink:href="images/sprite.svg#header__btn-icon"></use></svg>
+      </button>
+      <button class="header__menu-btn" data-modal="#modal-menu">
+        <svg class="header__menu-icon"><use xlink:href="images/sprite.svg#header__menu-btn"></use></svg>
+      </button>
+  </header>  
+  <div class="wrapper">
+   <div class="quick-menu">
+    <div class="quick-menu__items">
+      <button class="quick-menu__btn">
+        <img class="quick-menu__icon" src="images/comment-icon.svg" alt="image">
+      </button>
+    </div> 
+    <div class="quick-menu__items">
+      <button class="quick-menu__btn">
+        <img class="quick-menu__icon" src="images/burger-icon.svg" alt="image">
+      </button>
+    </div>
+    <div class="quick-menu__items">
+      <ul class="quick-menu__nav">
+        <li class="quick-menu__item">
+          <a class="quick-menu__link" href="#">
+            <img class="quick-menu__image" src="images/links/Telegram.svg" alt="image">
+          </a>
+        </li>
+        <li class="quick-menu__item">
+          <a class="quick-menu__link" href="#">
+            <img class="quick-menu__image" src="images/links/Vkontakte.svg" alt="image">
+          </a>
+        </li>
+        <li class="quick-menu__item">
+          <a class="quick-menu__link" href="#">
+            <img class="quick-menu__image" src="images/links/whatsapp.svg" alt="image">
+          </a>
+        </li>
+        <li class="quick-menu__item">
+          <a class="quick-menu__link" href="#">
+            <img class="quick-menu__image" src="images/links/ok.svg" alt="image">
+          </a>
+        </li>
+        <li class="quick-menu__item">
+          <a class="quick-menu__link" href="#">
+            <img class="quick-menu__image" src="images/links/viber.svg" alt="image">
+          </a>
+        </li>
+      </ul>
+      <button class="quick-menu__btn" id="menu_btn_art">
+        <img class="quick-menu__icon" src="images/link-icon.svg" alt="image">
+      </button>
+    </div>
+  </div>
+  <button class="quick-modal__btn" data-modal="#quick-modal">
+    <svg class="scrollup-btn"><use xlink:href="images/sprite.svg#scrollup-btn"></use></svg>
+  </button>
+  <div class="quick-modal" id="quick-modal">
+    <div class="quick-modal__dialog">
+        <button class="quick-modal__close" type="button" data-close="#quick-modal">
+          <svg class="quick-modal__btn-icon"><use xlink:href="images/sprite.svg#modal__btn-icon"></use></svg>
+        </button>      
+    <div class="quick-modal__content"> 
+      <div class="quick-modal__item--menu">
+       <div class="quick-modal__dropdown">
+        <h3 class="quick-modal__title">Содержание</h3>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows 11</button>
+         <div id="myDropdown-a" class="post__dropdown-content show">
+          <nav class="post__nav">
+           <ul>
+             <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+              <a href="#section-a">Способ 1: Video Wallpaper</a>
+             </li>
+             <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+              <a href="#section-b">Способ 2: DeskScapes</a>
+             </li>
+             <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+              <a href="#section-c">Способ 3: Wallpaper Engine</a>
+             </li>
+           </ul>
+          </nav>
+         </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows 8</button>
+          <div id="myDropdown-b" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows 8.1</button>
+          <div id="myDropdown-c" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows 8</button>
+          <div id="myDropdown-d" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows XP</button>
+          <div id="myDropdown-e" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows XP</button>
+          <div id="myDropdown-k" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows XP</button>
+          <div id="myDropdown-l" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows XP</button>
+          <div id="myDropdown-m" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows XP</button>
+          <div id="myDropdown-n" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows XP</button>
+          <div id="myDropdown-o" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows XP</button>
+          <div id="myDropdown-p" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows XP</button>
+          <div id="myDropdown-r" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+        <div class="quick-modal__dropdown">
+         <button onclick="myFunction()" class="post__dropbtn">Установка живых обоев на Windows XP</button>
+          <div id="myDropdown-s" class="post__dropdown-content">
+            <nav class="post__nav">
+             <ul>
+               <li class="post__nav_link" data-section="a" data-scroll="#section-a">
+                <a href="#section-a">Способ 1: Video Wallpaper</a>
+               </li>
+               <li class="post__nav_link" data-section="b" data-scroll="#section-b">
+                <a href="#section-b">Способ 2: DeskScapes</a>
+               </li>
+               <li class="post__nav_link" data-section="c" data-scroll="#section-c">
+                <a href="#section-c">Способ 3: Wallpaper Engine</a>
+               </li>
+             </ul>
+           </nav>
+          </div>
+        </div>
+       </div>    
+     </div>  
+    </div>  
+  </div>
+</div>
+<div class="modal" id="modal-add">
+       <div class="modal__dialog">     
+            <div class="modal__content">
+              <button class="modal-close" type="button" data-close="#modal-add">
+                <svg class="modal__btn-icon"><use xlink:href="images/sprite.svg#modal__btn-icon"></use></svg>
+              </button>  
+              <h3 class="modal__title">Предложить статью</h3>
+                <form class="modal__form" action="email">
+                  <label for="modal__form-name">Ваше имя</label>
+                  <input class="modal__form-name" id="modal__form-name" type="text" style="outline: none;" placeholder="Введите ваше Имя">
+                  <label for="modal__form-email">Ваше e-mail*</label>
+                  <input class="modal__form-email" id="modal__form-email" name="email" type="email" style="outline: none;" placeholder="Введите ваше E-mail">
+                  <label for="modal__form-input">Тема*</label>
+                  <textarea class="modal__form-input" id="modal__form-input" style="outline: none;" placeholder="Введите название или названия нескольких тем для предложения"></textarea>
+                  <button class="modal__btn"  type="submit">Предложить статью</button>
+                </form>
+            </div>  
+       </div>  
+   </div>
+   <div class="modal-menu" id="modal-menu">
+    <div class="modal-menu__dialog">
+    <header class="header header--modal">
+      <a class="logo" href="#">
+       <img class="logo__image" src="images/logo-b.svg" alt="image">
+      </a>
+      <form class="header__form">
+        <input class="header__form-input" type="text" style="outline: none;" required>
+        <button class="header__form-submit" type="submit">
+          <svg class="header__form-icon"><use xlink:href="images/sprite.svg#search_icon"></use></svg>
+        </button>
+      </form>
+      <button class="header__btn" data-modal="#modal-add">
+        <span class="header__btn-text">Предложить статью</span> 
+        <svg class="header__btn-icon"><use xlink:href="images/sprite.svg#header__btn-icon"></use></svg>
+      </button>
+      <button class="modal-menu__close" type="button" data-close="#modal-menu">
+        <svg class="modal__btn-icon"><use xlink:href="images/sprite.svg#modal__btn-icon"></use></svg>
+      </button> 
+    </header> 
+    <div class="modal-menu__content">
+      <button class="header__btn-menu" data-modal="#modal-add">
+        <span class="header__btn-text">Предложить статью</span> 
+        <svg class="header__btn-icon"><use xlink:href="images/sprite.svg#header__btn-icon"></use></svg>
+      </button>
+    <div id="gallery_social">
+      <div class="social">
+        <h2 class="social__title-menu empty">Lorem</h2>
+        <ul class="social__items">
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--telegram" src="images/links/Telegram.svg" alt="image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--vkontakte" src="images/links/Vkontakte.svg" alt="image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--youtube" src="images/links/YouTube.svg" alt="image">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__item-link" href="#">
+              <img class="social__item-link--rss" src="images/links/RSS.svg" alt="image">
+            </a>
+          </li>
+        </ul>
+       </div>
+      </div>
+      <div class="sidebar__menu"> 
+         <a class="sidebar__item" href="#">
+           <svg class="sidebar__image sidebar__image-menu"><use xlink:href="images/sprite.svg#sidebar-image_1"></use></svg>
+         </a>  
+         <a class="sidebar__item" href="#">
+           <svg class="sidebar__image sidebar__image-menu"><use xlink:href="images/sprite.svg#sidebar-image_2"></use></svg>
+         </a>  
+         <a class="sidebar__item" href="#">
+           <svg class="sidebar__image sidebar__image-menu"><use xlink:href="images/sprite.svg#sidebar-image_1"></use></svg>
+         </a>  
+         <a class="sidebar__item" href="#">
+           <svg class="sidebar__image sidebar__image-menu"><use xlink:href="images/sprite.svg#sidebar-image_2"></use></svg>
+         </a>  
+      </div>
+     </div>
+    </div>
+   </div>  
+  </div> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
