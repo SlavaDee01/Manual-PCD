@@ -14,7 +14,7 @@
 <body>
   <header class="header">
      <a class="logo" href="index.html">
-      <img class="logo__image" src="images/logo-b.svg" alt="image">
+      <img class="logo__image" src="images/logo-b.svg" alt="/">
      </a>
     <form class="header__form">
       <input class="header__form-input" type="text" style="outline: none;" required>
@@ -22,11 +22,11 @@
         <svg class="header__form-icon"><use xlink:href="images/sprite.svg#search_icon"></use></svg>
       </button>
     </form>
-      <button class="header__btn" data-modal="#modal-add">
+      <button class="header__btn" data-modal="#modal-add" type="button">
         <span class="header__btn-text">Предложить статью</span> 
         <svg class="header__btn-icon"><use xlink:href="images/sprite.svg#header__btn-icon"></use></svg>
       </button>
-      <button class="header__menu-btn" data-modal="#modal-menu">
+      <button class="header__menu-btn" data-modal="#modal-menu" type="button">
         <svg class="header__menu-icon"><use xlink:href="images/sprite.svg#header__menu-btn"></use></svg>
       </button>
   </header>  
@@ -283,7 +283,7 @@
           <svg class="header__form-icon"><use xlink:href="images/sprite.svg#search_icon"></use></svg>
         </button>
       </form>
-      <button class="header__btn" data-modal="#modal-add">
+      <button class="header__btn" type="button" data-modal="#modal-add">
         <span class="header__btn-text">Предложить статью</span> 
         <svg class="header__btn-icon"><use xlink:href="images/sprite.svg#header__btn-icon"></use></svg>
       </button>
@@ -292,7 +292,7 @@
       </button> 
     </header> 
     <div class="modal-menu__content">
-      <button class="header__btn-menu" data-modal="#modal-add">
+      <button class="header__btn-menu" type="button" data-modal="#modal-add">
         <span class="header__btn-text">Предложить статью</span> 
         <svg class="header__btn-icon"><use xlink:href="images/sprite.svg#header__btn-icon"></use></svg>
       </button>
